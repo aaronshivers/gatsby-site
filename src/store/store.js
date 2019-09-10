@@ -1,12 +1,7 @@
 import {store} from 'react-easy-state'
 
-const appStore = (
-  {
-    user: {
-      name: ''
-    },
-    cart: {}
-  }
+const AppContext = (
+  {state: {}, dispatch: {}}
 )
 
-export default appStore
+export default AppContext

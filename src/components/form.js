@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import { view } from 'react-easy-state'
-import appStore from '../store/store.js'
+import AppContext from '../store/store.js'
 import { Link } from 'gatsby'
 
 const Form = () => {
-  const [name, setName] = useState(appStore.user.name)
-  const [category, setCategory] = useState(appStore.cart.category)
-  const [body, setBody] = useState(appStore.cart.body)
+  const {state, dispatch} = AppContext
+  const [category, setCategory] = useState('')
+  const [body, setBody] = useState('')
 
   const handleSubmit = e => {
     e.preventDefault()
