@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 import appStore from '../store/store.js'
 
-const SecondPage = () => (
+const Cart = () => (
   <Layout>
     <SEO title="Page two" />
     <h1>Hi {appStore.user.name} from the second page</h1>
@@ -15,4 +15,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Cart
